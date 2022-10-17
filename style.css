@@ -1,0 +1,244 @@
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  /* Primary Colors */
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+
+  /* Neutral Colors */
+  --dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 16px Josefin Sans, sans-serif;
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+}
+main {
+  display: flex;
+  flex-direction: column-reverse;
+}
+header {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  padding: 1.8em;
+}
+header img {
+  width: 9.3em;
+}
+.container {
+  padding-top: 100px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 3.1em;
+}
+.container .text-container {
+  width: 100%;
+  padding: 5em 1.8em 0 1.8em;
+}
+.container .picture {
+  max-width: 50em;
+  height: 18.7em;
+}
+.container .picture img {
+  /* width: 100%; */
+  height: 100%;
+}
+.container .text-container h1 {
+  letter-spacing: 0.5rem;
+  text-align: center;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  color: var(--dark-grayish-red);
+  line-height: 3.5rem;
+  font-weight: 600;
+}
+.container .text-container h1 span {
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+.container .text-container p {
+  font-weight: 400;
+  max-width: 22em;
+  text-align: center;
+  color: var(--desaturated-red);
+  line-height: 1.5rem;
+  margin: 20px auto 40px auto;
+}
+.container form {
+  position: relative;
+  display: block;
+  height: 3.5em;
+  width: 100%;
+  max-width: 22em;
+  margin: 0 auto;
+}
+.container form input {
+  position: absolute;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--desaturated-red);
+  color: var(--dark-grayish-red);
+  background: transparent;
+  height: 100%;
+  border-radius: 3em;
+  padding-left: 1.8em;
+  font: 1rem Josefin Sans, sans-serif;
+}
+.container form button {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  border: none;
+  outline: none;
+  color: white;
+  width: 5.5em;
+  height: 100%;
+  border-radius: 3em;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0px 0px 18px 1px #f4aaab82;
+  transition: box-shadow 0.3s ease, background-image 0.4s ease;
+}
+.container form button:hover {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsla(0, 52%, 80%, 0.781)
+  );
+  box-shadow: 0px 0px 13px 2px #f4aaabbf;
+}
+.container form input::placeholder {
+  color: var(--desaturated-red);
+  font: 1rem Josefin Sans, sans-serif;
+  opacity: 0.8;
+}
+.container form .error-icon {
+  display: inline-block;
+  position: absolute;
+  right: 5em;
+  top: 24%;
+  display: none;
+}
+.container form .error-text {
+  position: absolute;
+  left: 1.8em;
+  top: 4.5em;
+  font-size: 0.87rem;
+  display: none;
+  color: var(--soft-red);
+  opacity: 0.8;
+}
+
+/*
+===============
+Footer Styles
+===============
+*/
+footer {
+  padding: 10px 0;
+  color: var(--dark-grayish-red);
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+a {
+  color: var(--dark-grayish-red);
+}
+a {
+  font-weight: bold;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--desaturated-red);
+}
+a:active {
+  text-decoration: none;
+}
+
+/*
+=============== 
+Responsive Styles
+===============
+*/
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 4em 12em;
+  }
+  main {
+    flex-direction: row;
+  }
+  .container {
+    padding-top: 0;
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+  .container .picture {
+    width: 80%;
+    height: 100vh;
+    /* background-image: url(/assets/images/hero-desktop.jpg); */
+  }
+  .container .text-container {
+    padding-left: 12em;
+    padding-top: 28vh;
+    width: 100%;
+    height: 100vh;
+    background: url('assets/images/bg-pattern-desktop.svg'),
+      linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-size: cover;
+  }
+  .container .text-container h1 {
+    text-align: left;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    letter-spacing: 1.1rem;
+  }
+  .container .text-container p {
+    margin-left: 0;
+    text-align: left;
+    font-size: 1rem;
+    max-width: 27em;
+    line-height: 2rem;
+  }
+  .container form {
+    /* height: 3.5em; */
+    margin-left: 0;
+    max-width: 28em;
+  }
+  .container form button {
+    width: 7.5em;
+  }
+  .container form .error-icon {
+    right: 7.5em;
+  }
+  .container form .error-text {
+    top: 5em;
+  }
+}
