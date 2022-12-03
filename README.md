@@ -10,9 +10,9 @@ Frontend Mentor challenges help me improve my coding skills by building realisti
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Models \& my works](#models--my-works)
-- [Desktop version:](#desktop-version)
-- [Mobile version](#mobile-version)
-- [Active states version](#active-states-version)
+      - [Desktop version:](#desktop-version)
+      - [Mobile version](#mobile-version)
+      - [Active states version](#active-states-version)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -33,19 +33,19 @@ Users should be able to:
 
 ### Models & my works
 
-# Desktop version:
+#### Desktop version:
 
 | Model   | ![desktop version](/assets/design/desktop-design.jpg)           |
 | ------- | --------------------------------------------------------------- |
 | My work | ![desktop version](/assets/my-work/my-work-desktop-version.png) |
 
-# Mobile version
+#### Mobile version
 
 | Model                                               | My work                                                       |
 | --------------------------------------------------- | ------------------------------------------------------------- |
 | ![mobile version](/assets/design/mobile-design.jpg) | ![mobile version](/assets/my-work/my-work-mobile-version.png) |
 
-# Active states version
+#### Active states version
 
 | Model   | ![Active states version](/assets/design/active-states.jpg)                  |
 | ------- | --------------------------------------------------------------------------- |
