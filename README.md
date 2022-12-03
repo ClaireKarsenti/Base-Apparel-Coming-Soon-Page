@@ -85,4 +85,4 @@ For the image to be responsive, I discovered `<picture> </picture>` tag. Before 
 ## Author
 
 - Linkedin - [Claire Karsenti](https://www.linkedin.com/in/claire-karsenti/)
-- Frontend Mentor - [@ClaireKarsent](https://www.frontendmentor.io/profile/ClaireKarsenti)
+- Frontend Mentor - [@ClaireKarsenti](https://www.frontendmentor.io/profile/ClaireKarsenti)
