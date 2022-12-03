@@ -10,7 +10,7 @@ Frontend Mentor challenges help me improve my coding skills by building realisti
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Models \& my works](#models--my-works)
-      - [Desktop version:](#desktop-version)
+      - [Desktop version](#desktop-version)
       - [Mobile version](#mobile-version)
       - [Active states version](#active-states-version)
     - [Links](#links)
@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Models & my works
 
-#### Desktop version:
+#### Desktop version
 
 | Model   | ![desktop version](/assets/design/desktop-design.jpg)           |
 | ------- | --------------------------------------------------------------- |
